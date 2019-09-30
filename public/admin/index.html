@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Admin page</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+      <!-- Import font Google CDN -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <script src="main.js"></script>
+  </head>
+  <body>
+      <header>
+          <!-- navigation header -->
+          <nav>
+              <ul class="menu">
+                  <li class="logo">ZC</li>
+                  <li>
+                    <a href="">My Sites</a>
+                  </li>
+                  <li>
+                    <a href="">Features</a>
+                  </li>
+              </ul>
+              <ul class="account">
+                <li>Zaka Coding</li>
+                <li></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+          <!-- main page -->
+          <div class="container">
+            <div class="title-header">
+              Account Settings
+            </div>
+            <section class="boxes">
+              <aside class="left-boxes">
+                <div class="box">
+                  <div class="title-box">
+                    Update Your User Name or Email
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      User Name
+                    </div>
+                    <div class="input-wrapper">
+                      <input class="input-box-content" type="text" name="username" value="">
+                      <div class="input-comment">
+                        * Changing your username will also change your site's free web address (i.e.username.wixsite.com/siteaddress). If you connected your domain, there will be no change.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      Email Address
+                    </div>
+                    <div class="input-wrapper">
+                      <input class="input-box-content" type="email" name="email" value="">
+                      <div class="spacer"></div>
+                      <button class="btn btn-disable position-right" type="button" name="button">Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Divider -->
+                <div class="box">
+                  <div class="title-box">
+                    Update Your Password
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      Current Password
+                    </div>
+                    <div class="input-wrapper">
+                      <input class="input-box-content" type="password" name="oldpwd" value="">
+                    </div>
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      New Password
+                    </div>
+                    <div class="input-wrapper">
+                      <input class="input-box-content" type="password" name="pwd" value="">
+                      <a class="link-forgot position-right" href="#">Forgot Password?</a>
+                    </div>
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      Retype New Password
+                    </div>
+                    <div class="input-wrapper">
+                      <input class="input-box-content" type="password" name="" value="">
+                      <div class="spacer"></div>
+                      <button class="btn btn-disable position-right" type="button" name="button">Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              <aside class="right-boxes">
+                <div class="box">
+                  <div class="title-box">
+                    Update Name or Profile Image
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      First Name
+                    </div>
+                    <div class="input-wrapper">
+                      <input class="input-box-content" type="text" name="fname" value="">
+                    </div>
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      Last Name
+                    </div>
+                    <div class="input-wrapper">
+                      <input class="input-box-content" type="text" name="lname" value="">
+                    </div>
+                  </div>
+                  <div class="box-content">
+                    <div class="label">
+                      Profile Image
+                    </div>
+                    <div class="image-wrapper">
+                      <img class="profile-image" src="" alt="">
+                      <div class="image-content-wrapper">
+                        <div class="image-explain">
+                          For best results, upload a high resolution image.
+                        </div>
+                        <button class="btn btn-light" type="button" name="button">Upload Image</button>
+                        <!-- Remove image -->
+                        <button class="btn-text" type="button" name="button">Remove Image</button>
+                      </div>
+                    </div>
+                    <div class="input-wrapper">
+                      <div class="spacer"></div>
+                      <button class="btn btn-disable position-right" type="button" name="button">Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Divider -->
+                <div class="box">
+                  <div class="title-box">
+                    Manage Your Social Logins
+                  </div>
+                  <div class="box-content">
+                    <div class="box-info">
+                      Enable or disable login to Admin page from your social login.
+                    </div>
+                    <div class="enable">
+                      <div class="icons icons-google"></div>
+                      <div class="label">
+                        Connect Google account
+                      </div>
+                      <button class="btn btn-light position-right" type="button" name="button">Enable</button>
+                    </div>
+                    <div class="enable">
+                      <div class="icons icons-facebook"></div>
+                      <div class="label">
+                        Connect Facebook account
+                      </div>
+                      <button class="btn btn-light position-right" type="button" name="button">Enable</button>
+                    </div>
+                    <div class="info">
+                      * Use your Wix password to log in after disabling social login
+                    </div>
+                    <!-- Spacer -->
+                    <div class="spacer"></div>
+                  </div>
+                </div>
+                <!-- Divider -->
+                <div class="box">
+                  <div class="title-box">
+                    Deactive Your Account
+                  </div>
+                  <div class="box-content">
+                    To deactivate your account, first delete all of the sites in it. If your site has any Premium Plans or domains connected to it, you'll need to cancel or transfer them first.
+                  </div>
+                </div>
+              </aside>
+            </section>
+          </div>
+      </main>
+      <footer>
+
+      </footer>
+  </body>
+</html>

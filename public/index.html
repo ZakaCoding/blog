@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <!-- favicon-->
+    <link rel="shortcut icon" href="icon/favicon.png">
+
+    <!-- Link to css file for styling this webpage -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/less" href="css/animate.less">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Import Google font CDN -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js" ></script>
+
+    <title>Hello, Developer!</title>
+  </head>
+  <body>
+    <!-- Default page -->
+    <div class="hello">
+      <!-- hamburger -->
+      <button class="btn-menu" onclick="showMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="menu-fullscreen" onclick="closeMenu()">
+        <div class="menu-content">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Shop</a>
+        </div>
+        <div class="position-bottom">
+          <div class="row">
+            <div class="social-media">
+              <a class="icon" href="https://github.com/zakacoding"><i class="fab fa-github fa-2x" title="github"></i></a>
+              <a class="icon" href="https://twitter.com/zaka_coding"><i class="fab fa-twitter-square fa-2x" title="twitter"></i></a>
+              <a class="icon" href="https://www.instagram.com/zaka_noor/"><i class="fab fa-instagram fa-2x" title="instagram"></i></a>
+            </div>
+          </div>
+          <p>&copy; 2019 ZakaCoding, All Rights Reserved.</p>
+        </div>
+      </div>
+
+      <div class="animation-footer">
+        <div class="brackets__left">[</div>
+        <div class="animation-footer__container">
+          <p class="animation-footer__container__text">
+            Hello
+          </p>
+          <ul class="animation-footer__container__list">
+            <li class="animation-footer__container__list__item">World !</li>
+            <li class="animation-footer__container__list__item">Zek !</li>
+            <li class="animation-footer__container__list__item">users !</li>
+            <li class="animation-footer__container__list__item">everybody !</li>
+          </ul>
+        </div>
+        <div class="brackets__right">]</div>
+      </div>
+      <!-- Div Spacer -->
+      <div class="spacer"></div>
+      <p class="font-poppins">visit my blog at - <a href="#" class="hyperlink"> zakacoding.com/blog </a></p>
+      <div class="spacer"></div>
+      <div class="social-media">
+        <a class="icon" href="https://github.com/zakacoding"><i class="fab fa-github fa-2x" title="github"></i></a>
+        <a class="icon" href="https://twitter.com/zaka_coding"><i class="fab fa-twitter-square fa-2x" title="twitter"></i></a>
+        <a class="icon" href="https://www.instagram.com/zaka_noor/"><i class="fab fa-instagram fa-2x" title="instagram"></i></a>
+      </div>
+      <!-- Click to scroll -->
+      <a href="#overview" id="click-scroll"><i class="fas fa-angle-double-down fa-2x"></i></a>
+    </div>
+
+    <div id="overview" class="wrapper bg-lightgray">
+      <div class="container">
+        <div class="overview">
+          <h1>Hi, I'am Zaka</h1>
+          <p>
+            a 19 Years old University of Negeri Malang student in Informatics Enginering. I'am currently working a freelance in programming.My specialization are web programming and frontend development. As an eternal dreamer, I've always been intersted in design, Technology and Programming. I spend a lot of time learning about programming, but there’s also a lot more to it
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Js -->
+    <script type="text/javascript">
+      // Show menu fullscreen
+      var menu = document.getElementsByClassName('menu-fullscreen');
+
+      function showMenu() {
+        menu[0].classList.add("menu-fullscreen-show");
+      }
+
+      function closeMenu() {
+        if(menu[0].classList.contains("menu-fullscreen-show"))
+        {
+          menu[0].classList.remove("menu-fullscreen-show");
+        }
+      }
+    </script>
+  </body>
